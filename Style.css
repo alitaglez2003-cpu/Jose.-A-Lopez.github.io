@@ -1,0 +1,324 @@
+/* ============================================
+   RESETEO Y ESTILOS GLOBALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   CABECERA
+   ============================================ */
+header {
+    background-color: #1a202c;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 3px solid #3182ce;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #a0aec0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #63b3ed;
+}
+
+/* ============================================
+   HERO (PRESENTACIÓN)
+   ============================================ */
+#hero {
+    background: linear-gradient(135deg, #2b6cb0, #1a365d);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #fbd38d;
+}
+
+#hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.badges span {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ecc94b;
+    color: #1a202c;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #d69e2e;
+    transform: scale(1.05);
+}
+
+/* ============================================
+   SECCIÓN DE SERVICIOS
+   ============================================ */
+#servicios {
+    padding: 60px 0;
+    background-color: white;
+}
+
+#servicios h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.servicio-card {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.servicio-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.servicio-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.servicio-card p {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.precio {
+    display: inline-block;
+    background: #3182ce;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ============================================
+   SECCIÓN DE PROYECTOS
+   ============================================ */
+#proyectos {
+    padding: 60px 0;
+    background-color: #edf2f7;
+}
+
+#proyectos h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.proyecto-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #3182ce;
+}
+
+.proyecto-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.proyecto-item p {
+    color: #4a5568;
+}
+
+/* ============================================
+   SECCIÓN DE CONTACTO
+   ============================================ */
+#contacto {
+    padding: 60px 0;
+    background: white;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#contacto p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4a5568;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f7fafc;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #3182ce;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #3182ce;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #2b6cb0;
+}
+
+.nota {
+    font-size: 13px;
+    color: #718096;
+    margin-top: 15px;
+}
+
+/* ============================================
+   PIE DE PÁGINA
+   ============================================ */
+footer {
+    background: #1a202c;
+    color: #a0aec0;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE (Para que se vea bien en celulares)
+   ============================================ */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}

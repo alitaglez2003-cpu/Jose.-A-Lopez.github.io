@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Dev & Automation | [Tu Nombre]</title>
+    <!-- Enlace a tu archivo de estilos (CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== CABECERA / NAVEGACIÓN ==================== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🛠️ [Tu Nombre]</h1>
+                <p class="tagline">Python Developer & Automation Engineer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO (PRESENTACIÓN) ==================== -->
+    <section id="hero">
+        <div class="container">
+            <h2>Automatizo tu negocio con <span class="highlight">Python</span></h2>
+            <p>Extraigo datos de la competencia, automatizo tareas repetitivas y te entrego informes en Excel. Ahorra horas de trabajo.</p>
+            <div class="badges">
+                <span>✅ Web Scraping</span>
+                <span>✅ Automatización</span>
+                <span>✅ Informes en Excel</span>
+            </div>
+            <a href="#contacto" class="btn-primary">Contáctame ahora</a>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios">
+        <div class="container">
+            <h2>🚀 Mis Servicios Profesionales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <h3>📊 Monitoreo de Precios</h3>
+                    <p>Analizo los precios de tu competencia en tiendas como <strong>Walmart, Amazon</strong> y te entrego un Excel con precios mínimos, máximos y promedio.</p>
+                    <span class="precio">Desde $50</span>
+                </div>
+                <div class="servicio-card">
+                    <h3>📁 Automatización de Excel</h3>
+                    <p>¿Tienes 50 archivos para revisar? Yo los unifico, limpio los datos y genero informes automáticos en segundos.</p>
+                    <span class="precio">Desde $40</span>
+                </div>
+                <div class="servicio-card">
+                    <h3>🕷️ Extracción de Datos Web</h3>
+                    <p>Extraigo productos, leads de clientes o cualquier dato público de cualquier página web y te lo entrego en CSV o Excel.</p>
+                    <span class="precio">Desde $60</span>
+                </div>
+                <div class="servicio-card">
+                    <h3>⚙️ Scripts Personalizados</h3>
+                    <p>¿Necesitas una tarea específica? Desarrollo scripts Python a tu medida para resolver cualquier problema repetitivo.</p>
+                    <span class="precio">Consultar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROYECTOS (PORTFOLIO) ==================== -->
+    <section id="proyectos">
+        <div class="container">
+            <h2>📂 Proyectos Recientes</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto-item">
+                    <h4>Monitor Walmart</h4>
+                    <p>Script que extrae precios de celulares en Walmart y genera estadísticas automáticas.</p>
+                </div>
+                <div class="proyecto-item">
+                    <h4>Unificador de Excel</h4>
+                    <p>Fusiona múltiples archivos Excel en uno solo y agrupa por categorías.</p>
+                </div>
+                <div class="proyecto-item">
+                    <h4>Scraper de Libros</h4>
+                    <p>Extracción de títulos y precios de catálogos de libros en línea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto">
+        <div class="container">
+            <h2>📬 Hablemos sobre tu proyecto</h2>
+            <p>¿Tienes una idea? ¿Necesitas automatizar algo? Escríbeme y te responderé rápidamente.</p>
+            
+            <!-- FORMULARIO DE CONTACTO (Usa Formspree o similar para que funcione sin backend) -->
+            <form action="https://formspree.io/f/xpzvrwqg" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje (¿Qué necesitas hacer?):</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Ej: Necesito extraer precios de Walmart para 50 productos..."></textarea>
+                
+                <button type="submit">Enviar Mensaje 🚀</button>
+            </form>
+            <p class="nota">*No comparto tus datos. Solo uso esta información para contactarte sobre tu proyecto.</p>
+        </div>
+    </section>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 [Tu Nombre] | Desarrollador Python</p>
+            <p>Diseñado con precisión desde 🇨🇺</p>
+        </div>
+    </footer>
+
+</body>
+</html>
